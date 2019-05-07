@@ -1,4 +1,13 @@
+
 .wrapper {
-  min-height: 100%;
-  padding-bottom: 100px;
+
+  background: #ceefe4;
+  height: 100%;
+  padding-top:50px;
+  display: inline-flex;
+
+  overflow: auto;
 }
+
+
+
