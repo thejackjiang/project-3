@@ -1,11 +1,11 @@
+# I.A.L.A.
+Indie Artist in Los Angeles
 
+A Full-Stack Web App that allow users to do a search for music artist. iLoveMusic utilizes several API’s to display upcoming Concert Dates, Artist Information, Youtube Videos, and get tickets.
 
-# IALA (indie music artists in los angeles app)
-
-IALA is a one-stop powerful niche music app with multiple capabilities. 
-It opens up with a beautiful welcome page that serves the user with upcoming indie music events going around all around Los Angeles. 
-The artists information appears below, with links to purchase tickets, and an option to watch their music videos. 
-Furthermore, you can also search simliar artists in the area or switch cities.
+I.A.L.A. is a one-stop powerful niche music app with multiple capabilities. 
+It opens up with a beautiful welcome page that serves the user with upcoming indie music events going around all around Los Angeles. The artists information appears below, with links to purchase tickets, and a modal option to watch their music videos. 
+Future plans include searching for simliar artists in the area or switching cities.
 
 <h3>Built with:</h3>
 <ul>
