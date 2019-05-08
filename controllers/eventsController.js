@@ -1,4 +1,5 @@
 const db = require("../models");
+const axios = require('axios')
 
 // Defining methods for the EventsController
 module.exports = {
@@ -33,5 +34,27 @@ module.exports = {
       .then(dbModel => dbModel.remove())
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
+  },
+
+  ticket: function (req, res) {
+    console.log('inside ticketmaster')
+    axios.get("https://app.ticketmaster.com/discovery/v2/events.json?size=3&classificationName=indie&dmaId=324&apikey=mnWSViQlToQzLVSUXFLo2U7AOKJ1L338")
+      .then((response) => {
+        const events = response.data._embedded.events;
+        const trimmedData = events.map((event) => {
+          const shapedData = {
+            name: event.name,
+            // venue: event.venue.location... etc
+          }
+          return shapedData
+        })
+        console.log(trimmedData)
+        return res.send(trimmedData)
+      })
   }
+
+
+
+
+
 };
