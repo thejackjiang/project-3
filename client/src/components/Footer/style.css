@@ -15,12 +15,12 @@ footer {
 
   /* Typography */
 
-  color: #d67c06;
+  color: black;
   text-align: center;
 
   /* Visual */
   background: #B2DFDB;
-  border-top: 2px solid #fdc4b6;
+  border-top: 2px solid black;
   position: relative;
   overflow: none;
 }

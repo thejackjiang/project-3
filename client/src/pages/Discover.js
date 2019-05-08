@@ -41,26 +41,6 @@ class Discover extends Component {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // class Discover extends Component {
 //   state = {
 //     image: "",
@@ -68,10 +48,10 @@ class Discover extends Component {
 //     matchCount: 0
 //   };
 
-  // // When the component mounts, load the next dog to be displayed
-  // componentDidMount() {
-  //   this.loadNextDog();
-  // }
+//   // When the component mounts, load the next dog to be displayed
+//   componentDidMount() {
+//     this.loadNextDog();
+//   }
 
 //   handleBtnClick = event => {
 //     // Get the data-value of the clicked button
@@ -126,4 +106,26 @@ class Discover extends Component {
 //   }
 // }
 
+
 export default Discover;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
