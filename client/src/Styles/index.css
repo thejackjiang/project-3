@@ -1,6 +1,5 @@
-
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 * {
@@ -8,8 +7,11 @@ body {
   box-sizing: border-box;
 }
 
-#root, #root > div, body, html {
+#root,
+#root > div,
+body,
+html {
   height: 100%;
   margin: 0;
-  padding: 0
+  padding: 0;
 }

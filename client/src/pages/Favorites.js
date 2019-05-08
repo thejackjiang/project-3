@@ -6,20 +6,14 @@ import Wrapper from "../components/Wrapper";
 import FavoriteResult from "../components/Favorite";
 
 function Favorites() {
-    return (
-      <div>
-         
-          <Wrapper>
-         
-          <FavCard />
-              <FavoriteResult />
-              
-        
-        
-              </Wrapper>
-
-</div>
-);
+  return (
+    <div>
+      <Wrapper>
+        <FavCard />
+        <FavoriteResult />
+      </Wrapper>
+    </div>
+  );
 }
 
 export default Favorites;
