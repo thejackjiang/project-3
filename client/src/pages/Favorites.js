@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import Container from "../components/Container";
 import FavCard from "../components/FavCard";
 import Wrapper from "../components/Wrapper";
+import Favorite from "../components/Favorite";
 
 function Favorites() {
     return (
@@ -10,7 +11,10 @@ function Favorites() {
          
           
          
-          <FavCard />
+          <FavCard>
+              <Favorite />
+              
+              </FavCard> 
         
 
 
@@ -18,4 +22,4 @@ function Favorites() {
 );
 }
 
-export default Favorites;;
+export default Favorites;
