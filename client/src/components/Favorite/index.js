@@ -1,15 +1,16 @@
 import React from "react";
-import "/Styles/index.css";
+
+import "./style.css";
 
 // Using the datalist element we can create autofill suggestions based on the props.breeds array
-function Favorite(props) {
+function FavoriteResult(props) {
   return (
     
-      <div className="form-group">
-     
+      <div>
+     User's Favorited IALA Events
       </div>
  
   );
           }
 
-export default Favorite;
+export default FavoriteResult;

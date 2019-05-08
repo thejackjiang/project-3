@@ -3,20 +3,20 @@ import Hero from "../components/Hero";
 import Container from "../components/Container";
 import FavCard from "../components/FavCard";
 import Wrapper from "../components/Wrapper";
-import Favorite from "../components/Favorite";
+import FavoriteResult from "../components/Favorite";
 
 function Favorites() {
     return (
       <div>
          
-          
+          <Wrapper>
          
-          <FavCard>
-              <Favorite />
+          <FavCard />
+              <FavoriteResult />
               
-              </FavCard> 
         
-
+        
+              </Wrapper>
 
 </div>
 );

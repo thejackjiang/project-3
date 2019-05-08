@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/app.css";
+import "../../Styles/app.css";
 
 
 function FavCard(props) {

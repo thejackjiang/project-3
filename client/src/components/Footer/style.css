@@ -1,14 +1,26 @@
-.footer {
-  min-height: 100px;
-  background: #E5E5E5;
-  position: relative;
+
+
+footer,
+.push {
+  min-height: 50px;
 }
 
-.footer span {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 3px;
-  background: #B8B8B8;
+footer {
+  /* Box-model */
+  padding: 30px 0;
+
+  /* Positioning */
+  clear: both;
+  font-size: 12px;
+
+  /* Typography */
+
+  color: #d67c06;
+  text-align: center;
+
+  /* Visual */
+  background: #065471;
+  border-top: 2px solid #d67c06;
+  position: relative;
+  overflow: none;
 }

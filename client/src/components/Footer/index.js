@@ -4,7 +4,8 @@ import "./style.css";
 function Footer() {
   return (
     <footer className="footer">
-      <span>INdieLA</span>
+      <span>   
+      &copy; Copyright INdieLA</span>
     </footer>
   );
 }
