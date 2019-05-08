@@ -1,6 +1,6 @@
-# project-3 
 
-## iala (indie music artists in los angeles App)
+
+# IALA (indie music artists in los angeles app)
 
 IALA is a one-stop powerful niche music app with multiple capabilities. 
 It opens up with a beautiful welcome page that serves the user with upcoming indie music events going around all around Los Angeles. 
