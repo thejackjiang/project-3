@@ -8,8 +8,19 @@
   width: 825px;
   box-shadow: 0 3px 6px #fdc4b6, 0 3px 6px #fdc4b6;
   text-align: left;
-  
+  color:whitesmoke;
   display: table;
+}
+.card-container{
+  background: #114357,;
+  color:whitesmoke;
+  width: 700px;
+  border-radius: 9px;
+  box-shadow: 0 3px 6px #fdc4b6, 0 3px 6px #fdc4b6;
+  padding: 20px;
+  margin: 1rem;
+  position: relative;
+  padding-right: 20px;
 }
 
 body {
@@ -54,8 +65,9 @@ table {
 
 form {
   box-shadow: 0 3px 6px #fdc4b6, 0 3px 6px #fdc4b6;
-  background-color: white;
-  background-color: aliceblue;
+  
+  background-color: grey;
+  color: whitesmoke;
   border-radius: 5px;
   border: 1px solid gray;
   text-transform: uppercase;
@@ -63,5 +75,6 @@ form {
   object-fit: contain;
   line-height: 250%;
   flex-wrap: wrap;
+  width: 100px;
 }
 

@@ -5,6 +5,7 @@ function RegisterForm(props) {
   return (
     <div>
       <div className="card">
+      <div className="card-container">
         <h2>Sign up </h2>
         <h5>
           <p>Create an account to save your events</p>
@@ -63,6 +64,7 @@ function RegisterForm(props) {
           Register
         </button>
         </form>
+      </div>
       </div>
     </div>
   );
