@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import API from "../utils/API";
-import RegCard from "../components/RegCard";
-import RegContainer from "../components/RegContainer";
 // import Card from "../components/Card";
 // import Alert from "../components/Alert";
 
@@ -30,8 +28,6 @@ class DiscoverArtist extends Component {
     console.log(this.state)
     return (
       <div>
-        <RegContainer>
-        <RegCard>
         <h1>artists</h1>
         {this.state.indieArtists.map(event => {
           return <h2>{event.name}</h2>
@@ -39,8 +35,6 @@ class DiscoverArtist extends Component {
         {this.state.indieArtists.map(event => {
           return <h2>{event.venue}</h2>
         })}
-        </RegCard>
-        </RegContainer>
       </div>
     )
   }
