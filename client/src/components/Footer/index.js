@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className="footer">
       <span>   
-      &copy; Copyright INdieLA</span>
+      &copy; IALA 2019</span>
     </footer>
   );
 }

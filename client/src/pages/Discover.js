@@ -3,6 +3,44 @@ import API from "../utils/API";
 import Card from "../components/Card";
 import Alert from "../components/Alert";
 
+
+// class Discover extends Component {
+//   state = {
+//     indieArtists: []
+//   };
+
+//   // When the component mounts, load the next artist to be displayed
+//   componentDidMount() {
+//     this.loadNextIndieEvent();
+//   }
+
+//   loadNextIndieEvent = () => {
+//     API.getIndieArtistEvents()
+//       .then(res =>
+//         this.setState({
+//           indieArtists: res.data
+//         })
+//       )
+//       .catch(err => console.log(err));
+//   };
+
+//   render() {
+//     console.log(this.state)
+//     return (
+//       <div>
+//         <h1>artists</h1>
+//         {this.state.indieArtists.map(event => {
+//           return <h2>{event.name}</h2>
+//         })}
+//         {this.state.indieArtists.map(event => {
+//           return <h2>{event.venue}</h2>
+//         })}
+//       </div>
+//     )
+//   }
+// }
+
+
 class Discover extends Component {
   state = {
     image: "",
@@ -68,4 +106,26 @@ class Discover extends Component {
   }
 }
 
+
 export default Discover;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

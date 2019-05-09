@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.css';
 import React from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 
@@ -34,6 +35,9 @@ export default class Example extends React.Component {
               </NavItem>
               <NavItem>
                 <NavLink href="/">About</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/discoverartist">Discover Artist</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="/discover">Discover</NavLink>
