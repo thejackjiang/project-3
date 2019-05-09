@@ -1,0 +1,39 @@
+.header {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    object-fit: fill;
+    background-repeat: no-repeat;
+    /* background-size: auto; */
+    height: 150px;
+  }
+  
+  .header::after {
+    content: "";
+    display: block;
+    opacity: .1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+  }
+  
+  .header * {
+    position: relative;
+    z-index: 2;
+    object-fit: contain;
+  }
+  
+  .hero h1, .hero h2 {
+    color: white;
+  }
+  
+  .hero h1 {
+    font-size: 60px;
+    padding-top: 140px;
+    margin-top: 0;
+  }
+  
