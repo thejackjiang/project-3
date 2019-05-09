@@ -4,6 +4,7 @@
     overflow: 'hidden';
     padding: 50px;
     background: #114357;
+    box-shadow: 0 33px 66px #fdc4b6, 0 33px 66px #fdc4b6;
   height: 100%;
   position: relative;
   background-position: center;

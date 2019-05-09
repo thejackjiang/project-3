@@ -9,11 +9,11 @@ import RegContainer from "../components/RegContainer";
 function CarouselEx() {
     return (
       <div>
-          <Wrapper>
+          
               <RegContainer>
                <ControlledCarousel />
                </RegContainer>
-               </Wrapper>    
+               
           </div>
 
      
