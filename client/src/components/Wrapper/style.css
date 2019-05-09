@@ -1,15 +1,5 @@
 .wrapper {
-<<<<<<< HEAD
-  /* background: url("/assets/images/indie_landing.jpeg") no-repeat center center;
-  min-height: 100vh;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;*/
-  /* background-size: cover;  */
-  background: #ceefe4;
-=======
   background: #114357;
->>>>>>> c55b06495856aef359d85f5c97666c7ef24f04d9
   height: 100%;
   position: relative;
   background-position: center;
