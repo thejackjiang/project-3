@@ -4,13 +4,19 @@ import Container from "../components/Container";
 import FavCard from "../components/FavCard";
 import Wrapper from "../components/Wrapper";
 // import FavoriteResult from "../components/FavoriteResult";
-
+import FavoriteResult from "../components/FavoriteResult";
+import RegContainer from "../components/RegContainer";
 function Favorites() {
   return (
     <div>
       <Wrapper>
-        <FavCard />
-
+        <RegContainer>
+        <FavCard>
+        <FavoriteResult>
+          </FavoriteResult>
+        </FavCard>
+           />
+</RegContainer>
       </Wrapper>
     </div>
   );
