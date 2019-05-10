@@ -9,7 +9,7 @@ import "../../Styles/app.css";
 function RegContainer(props) {
   return (
     <Paper className="paper">
-    <Grid container wrap="nowrap" spacing={16}>
+    <Grid container wrap="wrap" spacing={16}>
     <Grid item>
             <div className="regContainer" style={{ backgroundImage: `url(${props.backgroundImage})` }}>
               {props.children}

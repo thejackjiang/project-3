@@ -1,5 +1,6 @@
 import React from "../../node_modules/react";
 import Hero from "../components/Hero";
+import GlobalCard from "../components/GlobalCard";
 import Container from "../components/Container";
 import FavCard from "../components/FavCard";
 import Wrapper from "../components/Wrapper";
@@ -10,13 +11,16 @@ function Favorites() {
   return (
     <div>
       <Wrapper>
+     
         <RegContainer>
-        <FavCard>
-        <FavoriteResult>
-          </FavoriteResult>
-        </FavCard>
-           />
+      
+          <GlobalCard>
+          
+           <FavCard />
+           </GlobalCard>
+        
 </RegContainer>
+
       </Wrapper>
     </div>
   );
