@@ -1,6 +1,7 @@
 import React from "react";
 import Hero from "../components/Hero";
 import Container from "../components/Container";
+import GlobalCard from "../components/GlobalCard";
 import Header from "../components/Header";
 import Wrapper from "../components/Wrapper";
 import LoginForm from "../components/LoginForm";
