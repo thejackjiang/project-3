@@ -20,3 +20,22 @@ function Login() {
 }
 
 export default Login;
+import Wrapper from "../components/Wrapper";
+import LoginForm from "../components/LoginForm";
+
+function Login() {
+  return (
+   
+      <div>
+        <Wrapper>
+        <Header backgroundImage="/assets/images/indiela.png" fluid>
+    </Header>
+          <LoginForm />
+  
+        </Wrapper>
+      </div>
+    );
+  }
+  
+  export default Login;
+  
