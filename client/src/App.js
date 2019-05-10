@@ -5,7 +5,7 @@ import DiscoverArtist from "./pages/DiscoverArtist";
 import Favorites from "./pages/Favorites";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
-import Landing from "./pages/Landing";
+import About from "./pages/About";
 import Search from "./pages/Search";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -17,10 +17,10 @@ function App() {
       <div>
         <Navbar />
         <Wrapper>
-          <Route exact path="/" component={Landing} />
+          <Route exact path="/" component={About} />
           <Route exact path="/Login" component={Login} />
           <Route exact path="/Register" component={Register} />
-          <Route exact path="/Landing" component={Landing} />
+          <Route exact path="/about" component={About} />
           <Route exact path="/discoverartist" component={DiscoverArtist} />
           <Route exact path="/discover" component={Discover} />
           <Route exact path="/search" component={Search} />

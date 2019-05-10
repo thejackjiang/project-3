@@ -34,7 +34,7 @@ export default class Example extends React.Component {
 
               </NavItem>
               <NavItem>
-                <NavLink href="/">Landing</NavLink>
+                <NavLink href="/">About</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="/discoverartist">Discover Artist</NavLink>
@@ -50,10 +50,10 @@ export default class Example extends React.Component {
                 <NavLink href="/search">Search</NavLink>
 
               </NavItem>
-              {/* <NavItem>
+              <NavItem>
                 <NavLink href="/CarouselEx">Carousel example</NavLink>
 
-              </NavItem> */}
+              </NavItem>
               </Nav>
           </Collapse>
         </Navbar>

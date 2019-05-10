@@ -1,15 +1,9 @@
 import React, { Component } from "react";
 import API from "../utils/API";
+import RegCard from "../components/RegCard";
+import RegContainer from "../components/RegContainer";
 // import Card from "../components/Card";
 // import Alert from "../components/Alert";
-import Hero from "../components/Hero";
-import GlobalCard from "../components/GlobalCard";
-import Container from "../components/Container";
-import FavCard from "../components/FavCard";
-import Wrapper from "../components/Wrapper";
-// import FavoriteResult from "../components/FavoriteResult";
-import FavoriteResult from "../components/FavoriteResult";
-import RegContainer from "../components/RegContainer";
 
 
 class DiscoverArtist extends Component {
@@ -36,20 +30,17 @@ class DiscoverArtist extends Component {
     console.log(this.state)
     return (
       <div>
-        <Wrapper>
-        <h1>artists</h1>
-
         <RegContainer>
-<GlobalCard />
-
-        </RegContainer>
+        <RegCard>
+        <h1>artists</h1>
         {this.state.indieArtists.map(event => {
           return <h2>{event.name}</h2>
         })}
         {this.state.indieArtists.map(event => {
           return <h2>{event.venue}</h2>
         })}
-        </Wrapper>
+        </RegCard>
+        </RegContainer>
       </div>
     )
   }

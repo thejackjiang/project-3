@@ -5,9 +5,9 @@ import FavoriteResult from "../FavoriteResult";
 
 function FavCard(props) {
   return (
-     <div>>
+     <div className="card">
 <FavoriteResult />
-       <p>Favorited IALA Events:
+       <p>hi these are your favorited upcoming shows
        </p>
       </div>
       

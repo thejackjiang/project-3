@@ -8,12 +8,12 @@
   width: 825px;
   box-shadow: 0 3px 6px #fdc4b6, 0 3px 6px #fdc4b6;
   text-align: left;
-  color:#114357;
+  color:whitesmoke;
   display: table;
 }
 .card-container{
   background: #114357,;
-  color:black;
+  color:whitesmoke;
   width: 700px;
   border-radius: 9px;
   box-shadow: 0 3px 6px #fdc4b6, 0 3px 6px #fdc4b6;
@@ -62,15 +62,15 @@ table {
   text-transform: capitalize;
 }
 .table-content {
-  color: blue;
+  color: #7da2f8;
 
 }
 
 form {
   box-shadow: 0 3px 6px #fdc4b6, 0 3px 6px #fdc4b6;
   
-  background-color: aliceblue;
-  color: red;
+  background-color: grey;
+  color: whitesmoke;
   border-radius: 5px;
   border: 1px solid gray;
   text-transform: uppercase;

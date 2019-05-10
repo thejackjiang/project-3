@@ -16,12 +16,12 @@ const upcomingEvents = [
   {
     label: 'IELA EVENT1',
     imgPath:
-      '/assets/images/iala_logo.png',
+      'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60',
   },
   {
     label: 'IELA EVENT2',
     imgPath:
-      '/assets/images/mobile.jpeg',
+      'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60',
   },
   {
     label: 'IELA EVENT3',
