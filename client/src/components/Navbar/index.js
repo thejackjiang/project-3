@@ -50,6 +50,10 @@ export default class Example extends React.Component {
                 <NavLink href="/search">Search</NavLink>
 
               </NavItem>
+              <NavItem>
+                <NavLink href="/CarouselEx">Carousel example</NavLink>
+
+              </NavItem>
               </Nav>
           </Collapse>
         </Navbar>

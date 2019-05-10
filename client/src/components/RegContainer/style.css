@@ -1,11 +1,17 @@
-.wrapper {
-  background: #114357;
+.regContainer,
+.root {
+    flexGrow: 1;
+    overflow: 'hidden';
+    padding: 50px;
+    background: #114357;
+    box-shadow: 0 33px 66px #fdc4b6, 0 33px 66px #fdc4b6;
   height: 100%;
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 30px;
+  padding-bottom: 30px;
   display: inline-flex;
   width: fit-content;
   overflow: auto;
@@ -14,4 +20,10 @@
   max-width: auto; 
   width: 100%; 
 }
-
+.paper
+   {
+    width: 400;
+  border-radius: 9px;
+    padding:20px;
+  }
+;

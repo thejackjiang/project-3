@@ -1,4 +1,4 @@
-import React from "react";
+import React from "../../../node_modules/react";
 
 function Col(props) {
   const size = props.size.split(" ").map(size => "col-" + size).join(" ");

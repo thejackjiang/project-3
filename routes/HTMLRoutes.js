@@ -2,7 +2,7 @@ var db = require("../models");
 var express = require('express');
 var router = express.Router();
 var passport = require('passport');
-var ensureLoggedIn = require('connect-ensure-login').ensureLoggedIn;
+// var ensureLoggedIn = require('connect-ensure-login').ensureLoggedIn;
 
 // Load guarded page
 router.get("/guarded",
