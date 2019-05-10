@@ -132,9 +132,9 @@ class RegCard extends React.Component {
     }
   }
   
-  RecipeReviewCard.propTypes = {
+  MediaCard.propTypes = {
     classes: PropTypes.object.isRequired,
   };
   
-  export default withStyles(styles)(RecipeReviewCard);
+  export default withStyles(styles)(MediaCard);
   
