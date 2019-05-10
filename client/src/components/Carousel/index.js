@@ -42,7 +42,6 @@ const upcomingEvents = [
 
 const styles = theme => ({
   root: {
-   align: 'center',
     maxWidth: 400,
     flexGrow: 1,
   },
