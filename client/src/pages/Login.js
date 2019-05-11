@@ -9,5 +9,3 @@ function LoginForm() {
     </div>
   );
 }
-
- 
