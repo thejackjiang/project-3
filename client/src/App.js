@@ -1,36 +1,36 @@
-import React from "../node_modules/react";
-import { BrowserRouter as Router, Route } from "../node_modules/react-router-dom";
-import Discover from "./pages/Discover";
-import DiscoverArtist from "./pages/DiscoverArtist";
-import Favorites from "./pages/Favorites";
-import Register from "./pages/Register";
-import Login from "./pages/Login";
-import Landing from "./pages/Landing";
-import Search from "./pages/Search";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Wrapper from "./components/Wrapper";
-import CarouselEx from "./pages/CarouselEx";
-function App() {
-  return (
-    <Router>
-      <div>
-        <Navbar />
-        <Wrapper>
-          <Route exact path="/" component={Landing} />
-          <Route exact path="/Login" component={Login} />
-          <Route exact path="/Register" component={Register} />
-          <Route exact path="/Landing" component={Landing} />
-          <Route exact path="/discoverartist" component={DiscoverArtist} />
-          <Route exact path="/discover" component={Discover} />
-          <Route exact path="/search" component={Search} />
-          <Route exact path="/Favorites" component={Favorites} />
-          <Route exact path="/CarouselEx" component={CarouselEx} />
-        </Wrapper>
-        <Footer />
+import React, { Component } from 'react';
+
+import AuthService from './components/AuthService';
+import withAuth from './components/withAuth';
+const Auth = new AuthService();
+
+class App extends Component {
+
+
+  handleLogout = () => {
+    Auth.logout();
+    this.props.history.replace('/signup');
+  };
+
+  goToEditProfile = () => {
+    this.props.history.replace('/profile');
+  };
+
+  render() {
+    console.log(process.env.REACT_APP_SECRET_CODE);
+    return (
+      <div className="App">
+        <div className="App-header">
+          {/* <img src={logo} className="App-logo" alt="logo" /> */}
+          <h2>Welcome {this.props.user.email}</h2>
+        </div>
+        <p className="App-intro">
+          <button type="button" className="btn btn-primary" onClick={this.goToEditProfile}>Go to Profile</button>
+          <button type="button" className="btn btn-danger" onClick={this.handleLogout}>Logout</button>
+        </p>
       </div>
-    </Router>
-  );
+    );
+  }
 }
 
-export default App;
+export default withAuth(App);

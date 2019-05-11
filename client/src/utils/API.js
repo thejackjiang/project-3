@@ -8,14 +8,13 @@ export default {
     return axios.get("http://localhost:3001/api/events/ticketMaster ")    
   },
 
+  // USERAUTH
+  getUser: (id) => {
+    return axios.get(`/api/user/${id}`);
+  },
+  // sign up a user to our service
+  signUpUser: (username, email, password) => {
+    return axios.post('api/signup', {username: username, email: email, password: password});
 
-  getRandomDog: function() {
-    return axios.get("https://dog.ceo/api/breeds/image/random");
-  },
-  getDogsOfBreed: function(breed) {
-    return axios.get("https://dog.ceo/api/breed/" + breed + "/images");
-  },
-  getBaseBreedsList: function() {
-    return axios.get("https://dog.ceo/api/breeds/list");
   }
 };

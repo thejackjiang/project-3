@@ -5,11 +5,11 @@ var auth = require("../controllers/UserController.js");
 // restrict index for logged in user only
 router.get('/', auth.home);
 
-// route to register page
-router.get('/register', auth.register);
+// route to signup page
+router.get('/signup', auth.signup);
 
-// route for register action
-router.post('/register', auth.doRegister);
+// route for signup action
+router.post('/signup', auth.dosignup);
 
 // route to login page
 router.get('/login', auth.login);
