@@ -1,56 +1,63 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import React from 'react';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem } from 'reactstrap';
 
 export default class Example extends React.Component {
   constructor(props) {
     super(props);
 
-    this.toggleNavbar = this.toggleNavbar.bind(this);
+    this.toggle = this.toggle.bind(this);
     this.state = {
-      collapsed: true
+      isOpen: false
     };
   }
-
-  toggleNavbar() {
+  toggle() {
     this.setState({
-      collapsed: !this.state.collapsed
+      isOpen: !this.state.isOpen
     });
   }
   render() {
     return (
       <div>
-        <Navbar color="faded" light>
-          <NavbarBrand href="/" className="mr-auto">iala</NavbarBrand>
-          <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
-          <Collapse isOpen={!this.state.collapsed} navbar>
-            <Nav navbar>
-            <NavItem>
-                <NavLink href="/Login">Log in</NavLink>
-
+        <Navbar color="dark" light expand="md">
+          <NavbarBrand href="/">indiePlay</NavbarBrand>
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav className="ml-auto" navbar>
+              <NavItem>
+                <NavLink href="/Login/">Login</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/Register">Register</NavLink>
-
+                <NavLink href="/signup">Signup</NavLink>
               </NavItem>
-              <NavItem>
-                <NavLink href="/">About</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/discoverartist">Discover Artist</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/discover">Discover</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/favorites">Favorites</NavLink>
-
-              </NavItem>
-            <NavItem>
-                <NavLink href="/search">Search</NavLink>
-
-              </NavItem>
-              </Nav>
+              <UncontrolledDropdown nav inNavbar>
+          <DropdownToggle tag="a" className="nav-link" caret>
+            More Options
+          </DropdownToggle>
+          <DropdownMenu>
+            <DropdownItem tag="a" href="/">Landing</DropdownItem>
+            <DropdownItem divider />
+            <DropdownItem tag="a" href="/discoverartist">Discover Artist</DropdownItem>
+            <DropdownItem divider />
+            <DropdownItem tag="a" href="/discover">Discover</DropdownItem>
+            <DropdownItem divider />
+            <DropdownItem tag="a" href="/favorites">Favorites</DropdownItem>
+            <DropdownItem divider />
+            <DropdownItem tag="a" href="/search">Search</DropdownItem>
+          </DropdownMenu>
+        </UncontrolledDropdown>
+            </Nav>
           </Collapse>
         </Navbar>
       </div>

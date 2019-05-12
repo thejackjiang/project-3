@@ -1,13 +1,13 @@
-import React from "react";
+import React from "../../../node_modules/react";
 import "../../Styles/app.css";
 import FavoriteResult from "../FavoriteResult";
 
 
 function FavCard(props) {
   return (
-     <div className="card">
+     <div>>
 <FavoriteResult />
-       <p>hi these are your favorited upcoming shows
+       <p>Favorited IALA Events:
        </p>
       </div>
       

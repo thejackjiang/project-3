@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from "../../node_modules/react";
 import API from "../utils/API";
 import Container from "../components/Container";
 import SearchForm from "../components/SearchForm";

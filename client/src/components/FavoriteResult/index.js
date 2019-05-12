@@ -1,14 +1,15 @@
-import React from "react";
-
+import React from "../../../node_modules/react";
+import GlobalCard from "../GlobalCard";
 import "./style.css";
 
 // Using the datalist element we can create autofill suggestions based on the props.breeds array
 function FavoriteResult(props) {
   return (
-    
+    <GlobalCard>
     <div className="fav-results">
           <ul className="list-group search-results">
-     User's Favorited IALA Events:
+     <strong> 
+         Insert FavoritedEvent here</strong>
      {/* {props.results.map(result => ( */}
     {/* key={result}  */}
     <li className="list-group-item">
@@ -18,7 +19,7 @@ function FavoriteResult(props) {
     </ul>
 
       </div>
- 
+ </GlobalCard>
   );
           }
 
