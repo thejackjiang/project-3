@@ -1,23 +1,35 @@
 var express = require('express');
+const path = require("path");
 var router = express.Router();
 var auth = require("../controllers/UserController.js");
+const apiRoutes = require("./api");
 
-// restrict index for logged in user only
-router.get('/', auth.home);
+// API Routes
+router.use("/api", apiRoutes);
 
-// route to signup page
-router.get('/signup', auth.signup);
+// If no API routes are hit, send the React app
+router.use(function(req, res) {
+  res.sendFile(path.join(__dirname, "../client/public/index.html"));
+});
 
-// route for signup action
-router.post('/signup', auth.dosignup);
 
-// route to login page
-router.get('/login', auth.login);
+// // restrict index for logged in user only
+// router.get('/', auth.home);
 
-// route for login action
-router.post('/login', auth.doLogin);
+// // route to signup page
+// router.get('/signup', auth.signup);
 
-// route for logout action
-router.get('/logout', auth.logout);
+// // route for signup action
+// router.post('/signup', auth.dosignup);
+
+// // route to login page
+// router.get('/login', auth.login);
+
+// // route for login action
+// router.post('/login', auth.doLogin);
+
+// // route for logout action
+// router.get('/logout', auth.logout);
+
 
 module.exports = router;
