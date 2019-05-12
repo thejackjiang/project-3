@@ -1,6 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const app = express();
+const routes = require("./routes");
 const path = require("path");
 const mongoose = require("mongoose");
 const morgan = require("morgan"); // used to see requests
@@ -9,7 +10,6 @@ const PORT = process.env.PORT || 3001;
 
 const isAuthenticated = require("./config/isAuthenticated");
 const auth = require("./config/auth");
-
 // Setting CORS so that any website can
 // Access our API
 app.use((req, res, next) => {
@@ -20,6 +20,9 @@ app.use((req, res, next) => {
 
 //log all requests to the console
 app.use(morgan("dev"));
+
+// Add routes, both API and view
+app.use(routes);
 
 // Setting up express to use json and set it to req.body
 app.use(express.json());

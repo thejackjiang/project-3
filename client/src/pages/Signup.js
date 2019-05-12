@@ -27,6 +27,7 @@ class Signup extends Component {
 
   handleFormSubmit = event => {
     event.preventDefault();
+    console.log(this.state)
     API.signUpUser(this.state.username, this.state.email, this.state.password)
       .then(res => {
         // once the user has signed up

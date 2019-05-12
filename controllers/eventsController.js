@@ -37,13 +37,15 @@ module.exports = {
   },
 
   ticket: function (req, res) {
-    console.log('inside ticketmaster')
-    axios.get("https://app.ticketmaster.com/discovery/v2/events.json?size=3&classificationName=indie&dmaId=324&apikey=mnWSViQlToQzLVSUXFLo2U7AOKJ1L338")
+    axios.get("https://app.ticketmaster.com/discovery/v2/events.json?size=10&classificationName=indie&dmaId=324&apikey=mnWSViQlToQzLVSUXFLo2U7AOKJ1L338")
       .then((response) => {
         const events = response.data._embedded.events;
         const trimmedData = events.map((event) => {
+          console.log(event)
+          const image = event.images[3]
           const shapedData = {
             name: event.name,
+            image: image
             // venue: event.venue.location... etc
           }
           return shapedData
