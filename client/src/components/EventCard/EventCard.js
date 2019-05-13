@@ -14,6 +14,7 @@ export default function EventCard (props){
             <Card.Body>
                 <Card.Title>{props.event.name}</Card.Title>
                 <Card.Text>
+                    {props.event.name}
                     Some quick example text to build on the card title and make up the bulk of
                     the card's content.
     </Card.Text>
