@@ -3,6 +3,7 @@ import API from "../utils/API";
 // import Card from "../components/Card";
 // import Alert from "../components/Alert";
 import Hero from "../components/Hero";
+import Modal from "../components/Modal";
 import SpanningTable from "../components/SpanningTable";
 import Card from "../components/Card";
 import Alert from "../components/Alert";
@@ -46,7 +47,7 @@ class DiscoverArtist extends Component {
         
 
 <SpanningTable />
- 
+ <Modal />
 </RegContainer>
       
 </Wrapper>
