@@ -9,7 +9,7 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 
-const TAX_RATE = 0.07;
+const EventTable = 0.07;
 
 const styles = theme => ({
   root: {
@@ -23,22 +23,18 @@ const styles = theme => ({
   },
 });
 
-function ccyFormat(num) {
-  return `${num.toFixed(2)}`;
+
+
+function Event () {
+  return 
 }
 
-function priceRow(qty, unit) {
-  return qty * unit;
+function createRow(id, Artist, Date, Location, Time, Ticket) {
+ 
+  return { id, Artist, Date, Location, Time, Ticket };
 }
 
-function createRow(id, desc, qty, unit) {
-  const price = priceRow(qty, unit);
-  return { id, desc, qty, unit, price };
-}
 
-function subtotal(items) {
-  return items.map(({ price }) => price).reduce((sum, i) => sum + i, 0);
-}
 
 const rows = [
   ['Artist1', 100, 1.15],
@@ -46,9 +42,8 @@ const rows = [
   ['Artist3', 2, 17.99],
 ].map((row, id) => createRow(id, ...row));
 
-const invoiceSubtotal = subtotal(rows);
-const invoiceTaxes = TAX_RATE * invoiceSubtotal;
-const invoiceTotal = invoiceTaxes + invoiceSubtotal;
+
+
 
 function SpanningTable(props) {
   const { classes } = props;
@@ -70,8 +65,7 @@ function SpanningTable(props) {
               <TableCell>{row.desc}</TableCell>
               <TableCell align="right">{row.qty}</TableCell>
               <TableCell align="right">{row.unit}</TableCell>
-              <TableCell align="right">{ccyFormat(row.price)}</TableCell>
-            </TableRow>
+              </TableRow>
           ))}
          
         </TableBody>
