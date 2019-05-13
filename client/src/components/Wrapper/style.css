@@ -1,12 +1,11 @@
 .wrapper {
   background: #114357;
   height: 100%;
-  position: relative;
-  background-position: center;
+  position: absolute;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 30px;
-  display: inline-flex;
+  padding-top: 0px;
+  display: inline-block;
   width: fit-content;
   overflow: auto;
   margin-right: auto; 

@@ -5,7 +5,8 @@ import API from "../utils/API";
 import Hero from "../components/Hero";
 import Modal from "../components/Modal";
 import SpanningTable from "../components/SpanningTable";
-import Card from "../components/Card";
+import Grid from '@material-ui/core/Grid';
+
 import Alert from "../components/Alert";
 import GlobalCard from "../components/GlobalCard";
 import Container from "../components/Container";
@@ -40,17 +41,20 @@ class DiscoverArtist extends Component {
     console.log(this.state)
     return (
       <div>
-        <Wrapper>
-          <RegContainer>
+     
+          <Wrapper>
         <h1>Events Happening in LA</h1>
 
         
 
 <SpanningTable />
+<Grid container wrap="wrap" spacing={12}>
+<Grid item>
  <Modal />
-</RegContainer>
-      
-</Wrapper>
+</Grid>
+ </Grid>
+
+      </Wrapper>
       </div>
     )
   }

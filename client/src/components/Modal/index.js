@@ -22,7 +22,7 @@ function getModalStyle() {
 
 const styles = theme => ({
   paper: {
-    position: 'absolute',
+    position: 'relative',
     width: theme.spacing.unit * 50,
     backgroundColor: theme.palette.background.paper,
     boxShadow: theme.shadows[5],

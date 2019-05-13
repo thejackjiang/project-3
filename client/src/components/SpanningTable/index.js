@@ -16,10 +16,11 @@ const styles = theme => ({
     width: '100%',
     marginTop: theme.spacing.unit * 7,
     overflowX: 'auto',
+    heoght: '100%'
   },
   table: {
-    minWidth: 700,
-    padding:10
+    minWidth: 1700,
+    padding:50
   },
 });
 

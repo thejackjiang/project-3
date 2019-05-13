@@ -8,7 +8,7 @@ import Grid from '@material-ui/core/Grid';
 import "../../Styles/app.css";
 function RegContainer(props) {
   return (
-    <Grid container wrap="wrap" spacing={6}>
+    <Grid container wrap="flex" spacing={6}>
     <Grid item>
             <div className="regContainer" style={{ backgroundImage: `url(${props.backgroundImage})` }}>
               {props.children}
