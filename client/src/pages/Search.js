@@ -21,7 +21,7 @@ export default class Search extends React.Component {
         console.log(this.state)
         return (
             <div>
-                <h1>artists</h1>
+                <h1>IndieEvents</h1>
                 {this.state.artists.data && this.state.artists.data.map(event => {
                     return <EventCard event={event}/>
                 })}
