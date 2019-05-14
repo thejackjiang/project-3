@@ -13,7 +13,7 @@ import signup from "./pages/Signup";
 import Landing from "./pages/Landing";
 import Search from "./pages/Search";
 import Footer from "./components/Footer";
-// import Wrapper from "./components/Wrapper";
+import Wrapper from "./components/Wrapper";
 // import CarouselEx from "./pages/CarouselEx";
 // Our Components
 import Login from './pages/Login';
