@@ -42,7 +42,7 @@ const upcomingEvents = [
 
 const styles = theme => ({
   root: {
-    maxWidth: 400,
+    maxWidth: 800,
     flexGrow: 1,
   },
   header: {
@@ -53,9 +53,9 @@ const styles = theme => ({
     backgroundColor: theme.palette.background.default,
   },
   img: {
-    height: 255,
+    height: 355,
     display: 'block',
-    maxWidth: 400,
+    maxWidth: 800,
     overflow: 'hidden',
     width: '100%',
   },
