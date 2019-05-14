@@ -64,7 +64,7 @@ class SimpleModal extends React.Component {
         
         <form onSubmit={this.handleFormSubmit}>
         <form class="col s12 z-depth-1">
-          <div className="form-group">
+        <div className="form-group">
             <label htmlFor="email">Email address:</label>
             <input className="form-control"
                    placeholder="Email goes here..."
@@ -81,12 +81,13 @@ class SimpleModal extends React.Component {
                    type="password"
                    id="pwd"
                    onChange={this.handleChange}/>
-          </div>
+       
           <button type="submit" className="btn btn-primary">Submit</button>
        
         <p><Link to="/signup">Go to Signup</Link></p>
-       
+        </div>
       </form> 
+   
         </form>
       
             <SimpleModalWrapped />

@@ -75,7 +75,8 @@ form {
   border: 1px solid gray;
   text-transform: uppercase;
   margin: auto;
-  padding: 10px;
+  padding: 5px;
+  height: 300px;
   object-fit: cover;
   line-height: 10%;
   flex-wrap: wrap;
