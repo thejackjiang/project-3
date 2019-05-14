@@ -38,7 +38,7 @@ class DiscoverArtist extends Component {
   };
 
   render() {
-    console.log(this.state)
+    // console.log(this.state)
     return (
       <div>
      
@@ -47,7 +47,7 @@ class DiscoverArtist extends Component {
 
         
 
-<SpanningTable />
+<SpanningTable artists={this.state.indieArtists}/>
 <Grid container wrap="wrap" spacing={12}>
 <Grid item>
  <Modal />

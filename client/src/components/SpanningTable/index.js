@@ -49,6 +49,7 @@ const rows = [
 
 function SpanningTable(props) {
   const { classes } = props;
+  console.log(props.artists)
   return (
     <Paper className={classes.root}>
       <Table className={classes.table}>
@@ -62,13 +63,14 @@ function SpanningTable(props) {
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map(row => (
+          {props.artists.map(row => (
             <TableRow key={row.id}>
-              <TableCell>{row.Artist}</TableCell>
-              <TableCell align="right">{row.Date}</TableCell>
-              <TableCell align="right">{row.Location}</TableCell>
-              <TableCell align="right">{row.Time}</TableCell>
-              <TableCell align="right">{row.Ticket}</TableCell>
+              <TableCell>{row.name}</TableCell>
+              <TableCell align="right">{row.date}</TableCell>
+              <TableCell align="right">{row.address}</TableCell>
+              <TableCell align="right">{row.venue_name}</TableCell>
+              <TableCell align="right">{row.time}</TableCell>
+              <TableCell align="right">{row.url}</TableCell>
             </TableRow>
           ))}
          
