@@ -46,8 +46,10 @@ module.exports = {
           const shapedData = {
             name: event.name,
             image: image
+
             // venue: event.venue.location... etc
           }
+
           return shapedData
         })
         console.log(trimmedData)
