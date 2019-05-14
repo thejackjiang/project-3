@@ -49,9 +49,6 @@ export default class Example extends React.Component {
             <DropdownItem tag="a" href="/">Landing</DropdownItem>
             <DropdownItem divider />
             <DropdownItem tag="a" href="/discoverartist">Discover Artist</DropdownItem>
-            <DropdownItem divider />
-            <DropdownItem tag="a" href="/discover">Discover</DropdownItem>
-            <DropdownItem divider />
             <DropdownItem tag="a" href="/favorites">Favorites</DropdownItem>
             <DropdownItem divider />
             <DropdownItem tag="a" href="/search">Search</DropdownItem>
