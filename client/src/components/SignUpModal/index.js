@@ -97,7 +97,6 @@ class SimpleModal extends React.Component {
       </form>
       </form>
 
-      <SimpleModalWrapped />
           </div>
         </Modal>
   
