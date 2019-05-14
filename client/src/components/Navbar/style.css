@@ -2,3 +2,7 @@ nav.navbar.navbar-default {
   margin-bottom: 0;
   z-index: 99;
 }
+
+.navbar .navbar-nav>li>a, .navbar .navbar-nav>li>a:hover {
+  color: #fff;
+}

@@ -1,12 +1,15 @@
 import axios from "../../node_modules/axios";
 
 
-// Export an object containing methods we'll use for accessing the Dog.Ceo API
+// Export an object containing methods we'll use for accessing the ticketMaster API
 
 export default {
   getIndieArtistEvents: function() {
     return axios.get("http://localhost:3001/api/events/ticketMaster ")    
+ 
   },
+
+
 
   // USERAUTH
   getUser: (id) => {
