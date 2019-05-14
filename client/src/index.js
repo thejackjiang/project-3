@@ -13,8 +13,8 @@ import signup from "./pages/Signup";
 import Landing from "./pages/Landing";
 import Search from "./pages/Search";
 import Footer from "./components/Footer";
-import Wrapper from "./components/Wrapper";
-import CarouselEx from "./pages/CarouselEx";
+// import Wrapper from "./components/Wrapper";
+// import CarouselEx from "./pages/CarouselEx";
 // Our Components
 import Login from './pages/Login';
 import Profile from './pages/Profile';
@@ -39,7 +39,7 @@ ReactDOM.render(
           <Route exact path="/discover" component={Discover} />
           <Route exact path="/search" component={Search} />
           <Route exact path="/Favorites" component={Favorites} />
-          <Route exact path="/CarouselEx" component={CarouselEx} />
+          {/* <Route exact path="/CarouselEx" component={CarouselEx} /> */}
         </div>
     </Router>
     , document.getElementById('root')
