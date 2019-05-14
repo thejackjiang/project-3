@@ -69,16 +69,15 @@ table {
 form {
 
   
-  background-color: aliceblue;
+  background-color: white;
   color:black;
-  border-radius: 5px;
-  border: 1px solid gray;
+ 
   text-transform: uppercase;
   margin: auto;
-  padding: 5px;
+padding: 5px;
   height: 300px;
   object-fit: cover;
-  line-height: 10%;
+  line-height: 60%;
   flex-wrap: wrap;
   width: 350px;
 }
