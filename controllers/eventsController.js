@@ -41,10 +41,14 @@ module.exports = {
       .then((response) => {
         const events = response.data._embedded.events;
         const trimmedData = events.map((event) => {
+
           const image = event.images[3]
           const shapedData = {
             name: event.name,
             image: image,
+
+// filter out the duplicates venue names from venue 0
+
             url: events.url,
             date: event.dates.start.localDate,
             time: event.dates.start.localTime,
@@ -53,10 +57,10 @@ module.exports = {
 
             // venue: event.venue.location... etc
           }
+          
 
           return shapedData
         })
-        console.log(trimmedData)
         return res.send(trimmedData)
       })
   }

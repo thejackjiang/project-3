@@ -6,7 +6,6 @@ function LoginForm(props) {
     <div>
       <div className="card">
         <h2>Log in </h2>
-        <h5>Welcome back</h5>
 
         <form
           className="login"
