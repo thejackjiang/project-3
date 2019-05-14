@@ -5,7 +5,7 @@ import App from './App';
 
 import { Route, BrowserRouter as Router } from 'react-router-dom';
 import axios from "axios";
-import Discover from "./pages/Discover";
+
 import DiscoverArtist from "./pages/DiscoverArtist";
 import Favorites from "./pages/Favorites";
 import signup from "./pages/Signup";
@@ -13,8 +13,8 @@ import signup from "./pages/Signup";
 import Landing from "./pages/Landing";
 import Search from "./pages/Search";
 import Footer from "./components/Footer";
-import Wrapper from "./components/Wrapper";
-import CarouselEx from "./pages/CarouselEx";
+// import Wrapper from "./components/Wrapper";
+// import CarouselEx from "./pages/CarouselEx";
 // Our Components
 import Login from './pages/Login';
 import Profile from './pages/Profile';
@@ -36,10 +36,9 @@ ReactDOM.render(
           <Route exact path="/signup" component={signup} />
           <Route exact path="/Landing" component={Landing} />
           <Route exact path="/discoverartist" component={DiscoverArtist} />
-          <Route exact path="/discover" component={Discover} />
           <Route exact path="/search" component={Search} />
           <Route exact path="/Favorites" component={Favorites} />
-          <Route exact path="/CarouselEx" component={CarouselEx} />
+          {/* <Route exact path="/CarouselEx" component={CarouselEx} /> */}
         </div>
     </Router>
     , document.getElementById('root')
