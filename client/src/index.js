@@ -6,7 +6,7 @@ import App from './App';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
 import axios from "axios";
 
-import DiscoverArtist from "./pages/DiscoverArtist";
+import EventList from "./pages/EventList";
 import Favorites from "./pages/Favorites";
 import signup from "./pages/Signup";
 
@@ -35,7 +35,7 @@ ReactDOM.render(
           <Route exact path="/Login" component={Login} />
           <Route exact path="/signup" component={signup} />
           <Route exact path="/Landing" component={Landing} />
-          <Route exact path="/discoverartist" component={DiscoverArtist} />
+          <Route exact path="/Eventlist" component={EventList} />
           <Route exact path="/search" component={Search} />
           <Route exact path="/Favorites" component={Favorites} />
           {/* <Route exact path="/CarouselEx" component={CarouselEx} /> */}

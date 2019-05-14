@@ -17,7 +17,7 @@ import FavoriteResult from "../components/FavoriteResult";
 import RegContainer from "../components/RegContainer";
 
 
-class DiscoverArtist extends Component {
+class EventList extends Component {
   state = {
     indieArtists: []
   };
@@ -44,6 +44,9 @@ class DiscoverArtist extends Component {
      
           <Wrapper>
         <h1>Events Happening in LA</h1>
+        <p> Below you will find a list of upcoming events in LA </p>
+        <p> You can sort by date 
+        </p>
 
         
 
@@ -59,4 +62,4 @@ class DiscoverArtist extends Component {
     )
   }
 }
-export default DiscoverArtist;
+export default EventList;
