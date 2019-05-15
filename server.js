@@ -1,5 +1,6 @@
 require('dotenv').config()
 const express = require('express');
+const routes = require("./routes");
 const app = express();
 const path = require('path');
 const mongoose = require('mongoose');
@@ -20,6 +21,8 @@ app.use((req, res, next) => {
 
 //log all requests to the console
 app.use(morgan('dev'));
+app.use(routes);
+
 
 // Setting up express to use json and set it to req.body
 app.use(express.json());
