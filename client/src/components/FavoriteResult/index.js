@@ -2,7 +2,7 @@ import React from "../../../node_modules/react";
 import GlobalCard from "../GlobalCard";
 import "./style.css";
 
-// Using the datalist element we can create autofill suggestions based on the props.breeds array
+
 function FavoriteResult(props) {
   return (
     <GlobalCard>

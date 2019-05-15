@@ -18,7 +18,7 @@ export default function EventCard(props) {
                         Some quick example text to build on the card title and make up the bulk of
                         the card's content.
                     </Card.Text>
-                <Button variant="primary mr-2" >Ticket Info{props.event.url}</Button>
+                <Button variant="primary mr-2"><a href="{props.event.url}" target="_blank">Ticket Info</a></Button>
                 <Button variant="primary mr-2">Dates</Button>
                 <Button variant="primary">Save this Artist</Button>
 
