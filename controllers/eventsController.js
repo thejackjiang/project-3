@@ -39,21 +39,31 @@ module.exports = {
 
   ticket: function (req, res) {
     axios.get("https://app.ticketmaster.com/discovery/v2/events.json?size=10&classificationName=indie&dmaId=324&apikey=mnWSViQlToQzLVSUXFLo2U7AOKJ1L338")
-    .then((response) => {
-      const events = response.data._embedded.events;
-      const trimmedData = events.map((event) => {
-        console.log(event)
-        const image = event.images[3]
-        const shapedData = {
-          name: event.name,
-          image: image
-          // venue: event.venue.location... etc
-        }
-        return shapedData
+      .then((response) => {
+        const events = response.data._embedded.events;
+        const trimmedData = events.map((event) => {
+
+          const image = event.images[3]
+          const shapedData = {
+            name: event.name,
+            image: image,
+
+            // filter out the duplicates venue names from venue 0
+
+            url: events.url,
+            date: event.dates.start.localDate,
+            time: event.dates.start.localTime,
+            address: event._embedded.venues[0].address.line1,
+            venue_name: event._embedded.venues[0].name
+
+            // venue: event.venue.location... etc
+          }
+
+
+          return shapedData
+        })
+        return res.send(trimmedData)
       })
-      console.log(trimmedData)
-      return res.send(trimmedData)
-    })
-}
+  },
 
 };
