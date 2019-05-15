@@ -1,18 +1,13 @@
 import React, { Component } from "react";
 import API from "../utils/API";
-// import Card from "../components/Card";
-// import Alert from "../components/Alert";
 import Hero from "../components/Hero";
 import Modal from "../components/Modal";
 import SpanningTable from "../components/SpanningTable";
 import Grid from '@material-ui/core/Grid';
-
-import Alert from "../components/Alert";
 import GlobalCard from "../components/GlobalCard";
 import Container from "../components/Container";
 import FavCard from "../components/FavCard";
 import Wrapper from "../components/Wrapper";
-// import FavoriteResult from "../components/FavoriteResult";
 import FavoriteResult from "../components/FavoriteResult";
 import RegContainer from "../components/RegContainer";
 

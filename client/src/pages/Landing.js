@@ -1,30 +1,48 @@
 import React from "react";
-import Header from "../components/Header";
-import Container from "../components/Container";
-import Row from "../components/Row";
-import Col from "../components/Col";
-import Carousel from "../components/Carousel";
-import Wrapper from "../components/Wrapper";
-import Modal from "../components/Modal";
-import GlobalCard from "../components/GlobalCard";
-import ControlledCarousel from "../components/Carousel";
-import RegContainer from "../components/RegContainer";
-
+import Carousel from 'react-bootstrap/Carousel'
+import Portraits from '../components/Portraits'
 function Landing() {
   return (
     <div>
-      <Wrapper>
-      <Header backgroundImage="/public/assets/images/indiela.png" fluid>
-  </Header>
-      
-          <Carousel />
+      <Carousel>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="/assets/images/audience-band-club-2091383.jpg"
+            alt="First slide"
+          />
+          <Carousel.Caption>
+            <h3>First slide label</h3>  
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="/assets/images/band-concert-indie-1691051.jpg"
+            alt="Second slide"
+          />
 
-          <RegContainer>
-            
-             
-         
-</RegContainer>
-      </Wrapper>
+          <Carousel.Caption>
+            <h3>Second slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="/assets/images/artist-band-concert-1309238.jpg"
+            alt="Third slide"
+          />
+
+          <Carousel.Caption>
+            <h3>Third slide label</h3>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>;
+      
+      <Portraits/>
     </div>
   );
 }
