@@ -1,34 +1,35 @@
 const db = require("../models");
 const axios = require('axios')
 
+const apiKey = 'mnWSViQlToQzLVSUXFLo2U7AOKJ1L338'
 // Defining methods for the EventsController
 module.exports = {
-  findAll: function(req, res) {
+  findAll: function (req, res) {
     db.Event
       .find(req.query)
       .sort({ date: -1 })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
-  findById: function(req, res) {
+  findById: function (req, res) {
     db.Event
       .findById(req.params.id)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
-  create: function(req, res) {
+  create: function (req, res) {
     db.Event
       .create(req.body)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
-  update: function(req, res) {
+  update: function (req, res) {
     db.Event
       .findOneAndUpdate({ _id: req.params.id }, req.body)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
-  remove: function(req, res) {
+  remove: function (req, res) {
     db.Event
       .findById({ _id: req.params.id })
       .then(dbModel => dbModel.remove())
@@ -47,7 +48,7 @@ module.exports = {
             name: event.name,
             image: image,
 
-// filter out the duplicates venue names from venue 0
+            // filter out the duplicates venue names from venue 0
 
             url: events.url,
             date: event.dates.start.localDate,
@@ -57,16 +58,12 @@ module.exports = {
 
             // venue: event.venue.location... etc
           }
-          
+
 
           return shapedData
         })
         return res.send(trimmedData)
       })
-  }
-
-
-
-
+  },
 
 };
