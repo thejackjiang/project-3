@@ -6,10 +6,11 @@ import App from './App';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
 import axios from "axios";
 
-import DiscoverArtist from "./pages/DiscoverArtist";
+import EventList from "./pages/EventList";
 import Favorites from "./pages/Favorites";
 import signup from "./pages/Signup";
 
+import SingleEvent from "./pages/SingleEvent";
 import Landing from "./pages/Landing";
 import Search from "./pages/Search";
 import Footer from "./components/Footer";
@@ -17,7 +18,7 @@ import Wrapper from "./components/Wrapper";
 import Login from './pages/Login';
 import Profile from './pages/Profile';
 import Signup from './pages/Signup';
-import SingleEvent from './pages/SingleEvent';
+import SingleE from './pages/SingleE';
 import Navbar from './components/Navbar';
 
 // Here is if we have an id_token in localStorage
@@ -33,7 +34,7 @@ ReactDOM.render(
               <Route exact path="/" component={Landing} />
               <Route exact path="/Login" component={Login} />
               <Route exact path="/signup" component={signup} />
-              <Route exact path="/discoverartist" component={DiscoverArtist} />
+              <Route exact path="/eventList" component={EventList} />
               <Route exact path="/search" component={Search} />
               <Route exact path="/Favorites" component={Favorites} />
               <Route exact path="/singleEvent" component={SingleEvent} />

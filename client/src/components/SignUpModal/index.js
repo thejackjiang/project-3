@@ -50,9 +50,9 @@ class SimpleModal extends React.Component {
     const { classes } = this.props;
 
     return (
-      <div>
-        {/* <Typography gutterBottom>Click to get the full Modal experience!</Typography> */}
-        <Button onClick={this.handleOpen}>Log in</Button>
+      <div>      
+                {/* <Typography gutterBottom>Click to get the full Modal experience!</Typography> */}
+        <Button onClick={this.handleOpen}>Sign Up</Button>
         <Modal
           aria-labelledby="simple-modal-title"
           aria-describedby="simple-modal-description"
@@ -61,38 +61,47 @@ class SimpleModal extends React.Component {
         >
           <div style={getModalStyle()} className={classes.paper}>
            
-        
-        <form onSubmit={this.handleFormSubmit}>
-        <form class="col s12 z-depth-1">
+
+      <form onSubmit={this.handleFormSubmit}>
+      <form class="col s12 z-depth-1">
         <div className="form-group">
-            <label htmlFor="email">Email address:</label>
-            <input className="form-control"
-                   placeholder="Email goes here..."
-                   name="email"
-                   type="email"
-                   id="email"
-                   onChange={this.handleChange}/>
-          </div>
-          <div className="form-group">
-            <label htmlFor="pwd">Password:</label>
-            <input className="form-control"
-                   placeholder="Password goes here..."
-                   name="password"
-                   type="password"
-                   id="pwd"
-                   onChange={this.handleChange}/>
-       
-          <button type="submit" className="btn btn-primary">Submit</button>
-       
-        <p><Link to="/signup">Go to Signup</Link></p>
+          <label htmlFor="username">Username:</label>
+          <input className="form-control"
+                 placeholder="Username goes here..."
+                 name="username"
+                 type="text"
+                 id="username"
+                 onChange={this.handleChange}/>
         </div>
-      </form> 
-   
-        </form>
-      
+        <div className="form-group">
+          <label htmlFor="email">Email address:</label>
+          <input className="form-control"
+                 placeholder="Email goes here..."
+                 name="email"
+                 type="email"
+                 id="email"
+                 onChange={this.handleChange}/>
+        </div>
+        <div className="form-group">
+          <label htmlFor="pwd">Password:</label>
+          <input className="form-control"
+                 placeholder="Password goes here..."
+                 name="password"
+                 type="password"
+                 id="pwd"
+                 onChange={this.handleChange}/>
+        </div>
+        <button type="submit" className="btn btn-primary">Submit</button>
+    
+      <p><Link to="/login">Go to Login</Link></p>
+      </form>
+      </form>
+
           </div>
         </Modal>
+  
       </div>
+
     );
   }
 }

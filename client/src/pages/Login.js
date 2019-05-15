@@ -5,7 +5,7 @@ import GlobalCard from "../components/GlobalCard";
 import Header from "../components/Header";
 import Wrapper from "../components/Wrapper";
 import LoginForm from "../components/LoginForm";
-
+import Modal from "../components/Modal";
 import AuthService from './../components/AuthService';
 import {Link} from 'react-router-dom';
 
@@ -46,42 +46,7 @@ class Login extends Component {
   render() {
     return (
 <div>
-  <Wrapper>
-       <RegContainer>
-         
-      
-        <div className="card">
-        <h2>Welcome back</h2>
-        <form onSubmit={this.handleFormSubmit}>
-
-        <form class="col s12 z-depth-1">
-          <div className="form-group">
-            <label htmlFor="email">Email address:</label>
-            <input className="form-control"
-                   placeholder="Email goes here..."
-                   name="email"
-                   type="email"
-                   id="email"
-                   onChange={this.handleChange}/>
-          </div>
-          <div className="form-group">
-            <label htmlFor="pwd">Password:</label>
-            <input className="form-control"
-                   placeholder="Password goes here..."
-                   name="password"
-                   type="password"
-                   id="pwd"
-                   onChange={this.handleChange}/>
-          </div>
-          <button type="submit" className="btn btn-primary">Submit</button>
-       
-        <p><Link to="/signup">Go to Signup</Link></p>
-       
-      </form> 
-        </form>
-      </div> 
-      </RegContainer>
-      </Wrapper>
+ <Modal /> 
 </div>
 
     );
