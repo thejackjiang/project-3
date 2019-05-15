@@ -1,17 +1,13 @@
 import axios from "../../node_modules/axios";
 
-
 // Export an object containing methods we'll use for accessing the ticketMaster API
 
 export default {
   getIndieArtistEvents: function() {
-    return axios.get("http://localhost:3001/api/events/ticketMaster ")    
- 
+    return axios.get("http://localhost:3001/api/events/ticketMaster ");
   },
 
-
-
-  // USERAUTH
+  // Gets a single user by id
   getUser: (id) => {
     return axios.get(`/api/user/${id}`);
   },
@@ -20,4 +16,3 @@ export default {
     return axios.post('api/signup', {username: username, email: email, password: password});
   }
 };
-
