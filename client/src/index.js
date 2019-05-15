@@ -14,12 +14,6 @@ import Favorites from "./pages/Favorites";
 import SingleEvent from "./pages/SingleEvent";
 import Landing from "./pages/Landing";
 import Search from "./pages/Search";
-import Footer from "./components/Footer";
-import Wrapper from "./components/Wrapper";
-
-import Login from './pages/Login';
-import Profile from './pages/Profile';
-import Signup from './pages/Signup';
 
 import Navbar from './components/Navbar';
 
