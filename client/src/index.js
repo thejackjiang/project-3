@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-// import App from "./App";
+import App from "./App";
 import registerServiceWorker from './registerServiceWorker';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
 import axios from "axios";
@@ -9,8 +9,6 @@ import Signup from './pages/Signup';
 import Profile from './pages/Profile';
 import EventList from "./pages/EventList";
 import Favorites from "./pages/Favorites";
-
-
 import SingleEvent from "./pages/SingleEvent";
 import Landing from "./pages/Landing";
 import Search from "./pages/Search";
@@ -34,7 +32,7 @@ ReactDOM.render(
               <Route exact path="/EventList" component={EventList} />
               <Route exact path="/Search" component={Search} />
               <Route exact path="/Favorites" component={Favorites} />
-              <Route exact path="/singleEvent" component={SingleEvent} />
+              <Route exact path="/SingleEvent" component={SingleEvent} />
               <Route exact path="/Profile" component={Profile} />
         </div>
     </Router>
