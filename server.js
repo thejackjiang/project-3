@@ -2,6 +2,7 @@ require('dotenv').config()
 const express = require('express');
 const routes = require("./routes");
 const app = express();
+const routes = require("./routes")
 const path = require('path');
 const mongoose = require('mongoose');
 const morgan = require('morgan'); // used to see requests
@@ -28,8 +29,12 @@ app.use(routes);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Add routes, both API and view
+app.use(routes)
+
+
 mongoose
-  .connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/appDB', {useNewUrlParser: true, useCreateIndex: true})
+  .connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/IALADB', {useNewUrlParser: true, useCreateIndex: true})
   .then(() => console.log("MongoDB Connected!"))
   .catch(err => console.error(err));
 
