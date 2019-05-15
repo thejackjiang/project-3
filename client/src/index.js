@@ -30,10 +30,11 @@ ReactDOM.render(
         <div>
             <Navbar />
               <Route exact path="/" component={Landing} />
+              <Route exact path="/Landing" component={Landing} />
               <Route exact path="/Login" component={Login} />
               <Route exact path="/Signup" component={Signup} />
-              <Route exact path="/eventList" component={EventList} />
-              <Route exact path="/search" component={Search} />
+              <Route exact path="/EventList" component={EventList} />
+              <Route exact path="/Search" component={Search} />
               <Route exact path="/Favorites" component={Favorites} />
               <Route exact path="/singleEvent" component={SingleEvent} />
               <Route exact path="/Profile" component={Profile} />
