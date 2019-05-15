@@ -17,7 +17,7 @@ import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
 import Login from './pages/Login';
 import Profile from './pages/Profile';
-import Signup from './pages/Signup';
+import Signup from './pages/Signup'; 
 import Navbar from './components/Navbar';
 
 // Here is if we have an id_token in localStorage
