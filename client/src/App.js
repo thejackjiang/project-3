@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
-
-import AuthService from './components/AuthService';
-import withAuth from './components/withAuth';
+import React, { Component } from "react";
+import AuthService from "./components/AuthService";
+import withAuth from "./components/withAuth";
 const Auth = new AuthService();
 
 class App extends Component {
@@ -21,7 +20,6 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          {/* <img src={logo} className="App-logo" alt="logo" /> */}
           <h2>Welcome {this.props.user.email}</h2>
         </div>
         <p className="App-intro">
@@ -34,3 +32,4 @@ class App extends Component {
 }
 
 export default withAuth(App);
+

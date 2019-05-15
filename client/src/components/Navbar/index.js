@@ -1,63 +1,75 @@
-import 'bootstrap/dist/css/bootstrap.css';
-import React from 'react';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
+import React, { Component } from "react";
+import { Link } from 'react-router-dom';
+import AuthService from '../AuthService';
 
-export default class Example extends React.Component {
-  constructor(props) {
-    super(props);
+class Navbar extends Component {
+    constructor() {
+        super();
+        this.Auth = new AuthService();
+    }
 
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      isOpen: false
+    showNavigation = () => {
+        if (this.Auth.loggedIn()) {
+            return (
+                <ul className="navbar-nav">
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/profile">Profile</Link>
+                    </li>
+                    <li className="nav-item">
+                        {/* this is not using the Link component to logout or user and then refresh the application to the start */}
+                        <a className="nav-link" href="/" onClick={() => this.Auth.logout()}>Logout</a>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/Landing">Home</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/EventList">Upcoming Event list</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/Search">Search Events</Link>
+                    </li>
+                </ul>
+            );
+        } else {
+            return (
+                <ul className="navbar-nav">
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/Signup">Signup</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/Login">Login</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/Landing">Home</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/EventList">Upcoming Event list</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/Search">Search Events</Link>
+                    </li>
+                </ul>
+            );
+        }
     };
-  }
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
-  }
-  render() {
-    return (
-      <div>
-        <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">indiePlay</NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink href="/Login/">Login</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/signup">Signup</NavLink>
-              </NavItem>
-              <UncontrolledDropdown nav inNavbar>
-          <DropdownToggle tag="a" className="nav-link" caret>
-            More Options
-          </DropdownToggle>
-          <DropdownMenu>
-            <DropdownItem tag="a" href="/">Landing</DropdownItem>
-            <DropdownItem divider />
-            <DropdownItem tag="a" href="/EventList">Event List</DropdownItem>
-            <DropdownItem tag="a" href="/favorites">Favorites</DropdownItem>
-            <DropdownItem divider />
-            <DropdownItem tag="a" href="/search">Search</DropdownItem>
-          </DropdownMenu>
-        </UncontrolledDropdown>
-            </Nav>
-          </Collapse>
-        </Navbar>
-      </div>
-    );
-  }
+
+    render() {
+        return (
+            <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+                <div className="container">
+                    <Link className="navbar-brand" to="/">React JWT App</Link>
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="collapse navbar-collapse" id="navbarNav">
+                        <ul className="navbar-nav mr-auto">
+                        </ul>
+                        {this.showNavigation()}
+                    </div>
+                </div>
+            </nav>
+        )
+    }
 }
+
+export default Navbar;

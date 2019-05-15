@@ -1,7 +1,7 @@
 var express = require('express');
 const path = require("path");
 var router = express.Router();
-var auth = require("../controllers/UserController.js");
+
 const apiRoutes = require("./api");
 
 // API Routes
