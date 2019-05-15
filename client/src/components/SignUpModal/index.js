@@ -62,40 +62,7 @@ class SimpleModal extends React.Component {
           <div style={getModalStyle()} className={classes.paper}>
            
 
-      <form onSubmit={this.handleFormSubmit}>
-      <form class="col s12 z-depth-1">
-        <div className="form-group">
-          <label htmlFor="username">Username:</label>
-          <input className="form-control"
-                 placeholder="Username goes here..."
-                 name="username"
-                 type="text"
-                 id="username"
-                 onChange={this.handleChange}/>
-        </div>
-        <div className="form-group">
-          <label htmlFor="email">Email address:</label>
-          <input className="form-control"
-                 placeholder="Email goes here..."
-                 name="email"
-                 type="email"
-                 id="email"
-                 onChange={this.handleChange}/>
-        </div>
-        <div className="form-group">
-          <label htmlFor="pwd">Password:</label>
-          <input className="form-control"
-                 placeholder="Password goes here..."
-                 name="password"
-                 type="password"
-                 id="pwd"
-                 onChange={this.handleChange}/>
-        </div>
-        <button type="submit" className="btn btn-primary">Submit</button>
-    
-      <p><Link to="/login">Go to Login</Link></p>
-      </form>
-      </form>
+     
 
           </div>
         </Modal>
