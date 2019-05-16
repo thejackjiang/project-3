@@ -12,8 +12,6 @@ import Favorites from "./pages/Favorites";
 import SingleEvent from "./pages/SingleEvent";
 import Landing from "./pages/Landing";
 // import Explore from "./pages/Explore";
-import Footer from "./components/Footer";
-import Wrapper from "./components/Wrapper";
 import Search from "./pages/Search";
 import Navbar from './components/Navbar';
 
@@ -27,7 +25,7 @@ ReactDOM.render(
     <Router>
         <div>
             <Navbar />
-              <Route exact path="/" component={Landing} />
+              <Route exact path="/" component={App} />
               <Route exact path="/Landing" component={Landing} />
               <Route exact path="/Login" component={Login} />
               <Route exact path="/Signup" component={Signup} />
