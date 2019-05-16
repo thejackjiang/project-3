@@ -12,7 +12,8 @@ import Favorites from "./pages/Favorites";
 import SingleEvent from "./pages/SingleEvent";
 import Landing from "./pages/Landing";
 import Search from "./pages/Search";
-
+import Footer from "./components/Footer";
+import Wrapper from "./components/Wrapper";
 import Navbar from './components/Navbar';
 
 // Here is if we have an id_token in localStorage

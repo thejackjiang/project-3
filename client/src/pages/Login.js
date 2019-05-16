@@ -60,7 +60,7 @@ class Login extends Component {
           </div>
           <button type="submit" className="btn btn-primary">Submit</button>
         </form>
-        <p><Link to="/signup">New to indiePlay? Signup</Link></p>
+        <p><Link to="/signup">Go to Signup</Link></p>
       </div>
 
     );
