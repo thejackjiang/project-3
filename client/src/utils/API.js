@@ -8,6 +8,12 @@ export default {
   },
 
 
+    getIndieArtists: function() {
+      return axios.get("http://localhost:3001/api/artists/ticketMaster ");
+    },
+  
+
+
   // Gets a single user by id
   getUser: (id) => {
     return axios.get(`/api/user/${id}`);

@@ -32,7 +32,7 @@ export default class Portraits extends Component {
     return (
       <Container>
 
-<Row className="search">
+    <Row className="search">
                     <Col sm="12">
                         <InputGroup>
                             <Input placeholder="Find an artist"/>
@@ -43,7 +43,7 @@ export default class Portraits extends Component {
                                 </Button>
                             </InputGroupAddon>
                         </InputGroup>
-                    </Col>
+              </Col>
       </Row>
         <Row>
           <Col>
@@ -70,8 +70,6 @@ export default class Portraits extends Component {
             }}><Button variant="info">info</Button></Link>
           </Col>
         </Row>
-
-                       {/*Search field and button*/}
   
 
       </Container>
