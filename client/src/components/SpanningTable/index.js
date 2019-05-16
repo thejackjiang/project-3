@@ -66,13 +66,14 @@ function SpanningTable(props) {
         <TableBody>
           {props.artists.map(row => (
             <TableRow key={row.id}>
-              <TableCell>{row.name}</TableCell>
+               <TableCell>{row.name}</TableCell>
               <TableCell align="right">{row.date}</TableCell>
               <TableCell align="right">{row.address}</TableCell>
               <TableCell align="right">{row.venue_name}</TableCell>
               <TableCell align="right">{row.time}</TableCell>
               <TableCell align="right">{row.url}</TableCell>
             </TableRow>
+      
           ))}
          
         </TableBody>
