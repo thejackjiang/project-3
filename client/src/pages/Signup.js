@@ -66,17 +66,9 @@ class Signup extends Component {
                    id="pwd"
                    onChange={this.handleChange}/>
           </div>
-
-          <div className="form-group">
-            <label htmlFor="zipcode">Zip/Postal Code:</label>
-            <input className="form-control"
-                   placeholder="enter zipcode here."
-                   zipcode="zipcode"
-                   onChange={this.handleChange}/>
-          </div>
           <button type="submit" className="btn btn-primary">Submit</button>
         </form>
-        <p><Link to="/login">Already Signed Up? Login</Link></p>
+        <p><Link to="/login">Go to Login</Link></p>
       </div>
     );
   }
