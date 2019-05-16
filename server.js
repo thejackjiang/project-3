@@ -1,6 +1,6 @@
 require('dotenv').config()
 const express = require('express');
-const routes = require("./routes");
+
 const app = express();
 const routes = require("./routes")
 const path = require('path');
@@ -22,25 +22,20 @@ app.use((req, res, next) => {
 
 //log all requests to the console
 app.use(morgan('dev'));
-app.use(routes);
-
 
 // Setting up express to use json and set it to req.body
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Add routes, both API and view
-app.use(routes)
-
-
 mongoose
-  .connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/IALADB', {useNewUrlParser: true, useCreateIndex: true})
+  .connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/appDB', {useNewUrlParser: true, useCreateIndex: true})
   .then(() => console.log("MongoDB Connected!"))
   .catch(err => console.error(err));
 
 
 // LOGIN ROUTE
 app.post('/api/login', (req, res) => {
+  console.log(req.body.email, req.body.password)
   auth
     .logUserIn(req.body.email, req.body.password)
     .then(dbUser => res.json(dbUser))
@@ -74,6 +69,9 @@ if (process.env.NODE_ENV === "production") {
 app.get('/', isAuthenticated /* Using the express jwt MW here */, (req, res) => {
   res.send('You are authenticated'); //Sending some response when authenticated
 });
+
+// Add routes, both API and view
+app.use(routes)
 
 // Error handling
 app.use(function (err, req, res, next) {

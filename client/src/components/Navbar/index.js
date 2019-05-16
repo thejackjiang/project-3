@@ -20,24 +20,26 @@ class Navbar extends Component {
                         <a className="nav-link" href="/" onClick={() => this.Auth.logout()}>Logout</a>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/landing">Home</Link>
+                        <Link className="nav-link" to="/Landing">Home</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/eventList">Upcoming Event list</Link>
+                        <Link className="nav-link" to="/EventList">Upcoming Event list</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/search">Search Events</Link>
+                        <Link className="nav-link" to="/Search">Search Events</Link>
                     </li>
                 </ul>
+          
+               
             );
         } else {
             return (
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <Link className="nav-link" to="/Signup">Signup</Link>
+                        <Link className="nav-link" to="/signup">Signup</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/Login">Login</Link>
+                        <Link className="nav-link" to="/login">Login</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to="/Landing">Home</Link>
@@ -48,6 +50,7 @@ class Navbar extends Component {
                     <li className="nav-item">
                         <Link className="nav-link" to="/Search">Search Events</Link>
                     </li>
+              
                 </ul>
             );
         }
@@ -57,7 +60,7 @@ class Navbar extends Component {
         return (
             <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
                 <div className="container">
-                    <Link className="navbar-brand" to="/">indiePlay LA</Link>
+                    <Link className="navbar-brand" to="/">React JWT App</Link>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
