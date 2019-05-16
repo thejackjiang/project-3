@@ -1,22 +1,12 @@
-// import React, { Component } from "react";
-
-// export default function Search(props) {
-//   const artist = props.location.state.artist
-//     return (
-//         <h1>{artist.name} </h1>
-        
-//     )
-// }
-
 import React from "react";
 import API from '../utils/API'
 import EventCard from '../components/EventCard/EventCard';
 import Wrapper from "../components/Wrapper";
-export default class Search extends React.Component {
+export default class Explore extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            artists: []
+            venues: []
         };
     }
 
@@ -33,7 +23,7 @@ export default class Search extends React.Component {
             <Wrapper>
             <div>
                
-                <h1>IndieEvents</h1>
+                <h1>Explore IndieEvents</h1>
                 {this.state.artists.data && this.state.artists.data.map(event => {
                     return <EventCard event={event}/>
                 })}

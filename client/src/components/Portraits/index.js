@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Container, Col, Row, Image, Button } from 'react-bootstrap'
+import { Input, InputGroup, InputGroupAddon } from 'reactstrap'
 import API from '../../utils/API'
 import { Link } from 'react-router-dom';
 export default class Portraits extends Component {
@@ -30,9 +31,23 @@ export default class Portraits extends Component {
     }
     return (
       <Container>
+
+<Row className="search">
+                    <Col sm="12">
+                        <InputGroup>
+                            <Input placeholder="Find an artist"/>
+                            <InputGroupAddon addonType="prepend">
+                                <Button color="success" 
+                                        className="search-button">
+                                    Search Artist
+                                </Button>
+                            </InputGroupAddon>
+                        </InputGroup>
+                    </Col>
+      </Row>
         <Row>
           <Col>
-            <Image style={{ width: 100, height: '100' }} src={pic1} rounded />
+            <Image style={{ width: 300, height: '300' }} src={pic1} rounded />
             <Link to={{
               pathname: "/singleEvent",
               state: { artist: this.state.artists[0] }
@@ -41,20 +56,24 @@ export default class Portraits extends Component {
             </Link>
           </Col>
           <Col>
-            <Image style={{ width: 100, height: '100' }} src={pic2} rounded />
+            <Image style={{ width: 300, height: '300' }} src={pic2} rounded />
             <Link to={{
               pathname: "/singleEvent",
               state: { artist: this.state.artists[1] }
             }}><Button variant="info">info</Button></Link>
           </Col>
           <Col>
-            <Image style={{ width: 100, height: '100' }} src={pic3} rounde />
+            <Image style={{ width: 300, height: '300' }} src={pic3} rounded />
             <Link to={{
               pathname: "/singleEvent",
               state: { artist: this.state.artists[2] }
             }}><Button variant="info">info</Button></Link>
           </Col>
         </Row>
+
+                       {/*Search field and button*/}
+  
+
       </Container>
     )
   }

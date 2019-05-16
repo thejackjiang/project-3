@@ -20,13 +20,10 @@ class Navbar extends Component {
                         <a className="nav-link" href="/" onClick={() => this.Auth.logout()}>Logout</a>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/landing">Home</Link>
-                    </li>
-                    <li className="nav-item">
                         <Link className="nav-link" to="/eventList">Upcoming Event list</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/search">Search Events</Link>
+                        <Link className="nav-link" to="/explore">Explore</Link>
                     </li>
                 </ul>
             );
@@ -40,13 +37,10 @@ class Navbar extends Component {
                         <Link className="nav-link" to="/Login">Login</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/Landing">Home</Link>
-                    </li>
-                    <li className="nav-item">
                         <Link className="nav-link" to="/EventList">Upcoming Event list</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/Search">Search Events</Link>
+                        <Link className="nav-link" to="/Search">Explore</Link>
                     </li>
                 </ul>
             );
