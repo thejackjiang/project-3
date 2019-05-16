@@ -20,13 +20,17 @@ class Navbar extends Component {
                         <a className="nav-link" href="/" onClick={() => this.Auth.logout()}>Logout</a>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/landing">Home</Link>
+                        <Link className="nav-link" to="/Landing">Home</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/eventList">Upcoming Event list</Link>
+                        <Link className="nav-link" to="/EventList">Upcoming Event list</Link>
                     </li>
                     <li className="nav-item">
+<<<<<<< HEAD
                         <Link className="nav-link" to="/search">Search Events</Link>
+=======
+                        <Link className="nav-link" to="/Search">Search Events</Link>
+>>>>>>> parent of e456b0c8... Revert "fixed api routes"
                     </li>
                 </ul>
             );

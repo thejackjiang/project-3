@@ -25,7 +25,7 @@ ReactDOM.render(
     <Router>
         <div>
             <Navbar />
-              <Route exact path="/" component={Landing} />
+              <Route exact path="/" component={App} />
               <Route exact path="/Landing" component={Landing} />
               <Route exact path="/Login" component={Login} />
               <Route exact path="/Signup" component={Signup} />
