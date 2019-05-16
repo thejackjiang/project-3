@@ -26,11 +26,7 @@ class Navbar extends Component {
                         <Link className="nav-link" to="/EventList">Upcoming Event list</Link>
                     </li>
                     <li className="nav-item">
-<<<<<<< HEAD
-                        <Link className="nav-link" to="/search">Search Events</Link>
-=======
                         <Link className="nav-link" to="/Search">Search Events</Link>
->>>>>>> parent of e456b0c8... Revert "fixed api routes"
                     </li>
                 </ul>
             );
