@@ -2,11 +2,13 @@ import React from "react";
 import API from '../utils/API'
 import EventCard from '../components/EventCard/EventCard';
 import Wrapper from "../components/Wrapper";
+import "./styles/index.css";
 export default class Explore extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            venues: []
+            venues: [],
+            artist: []
         };
     }
 
