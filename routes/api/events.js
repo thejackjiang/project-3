@@ -12,7 +12,8 @@ router.route("/")
 router.route('/ticketMaster')
   .get(eventsController.ticket)
 
-
+router.route('/artist/:name')
+  .get(eventsController.searchArtist)
 // Matches with "/api/events/:id"
 router
   .route("/:id")

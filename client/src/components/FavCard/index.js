@@ -7,7 +7,7 @@ function FavCard(props) {
   return (
      <div>>
 <FavoriteResult />
-       <p>Favorited IALA Events:
+       <p>Favorited IndiePlay Events:
        </p>
       </div>
       

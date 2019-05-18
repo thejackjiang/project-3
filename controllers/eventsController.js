@@ -39,27 +39,53 @@ module.exports = {
 
   ticket: function (req, res) {
     axios.get("https://app.ticketmaster.com/discovery/v2/events.json?size=10&classificationName=indie&dmaId=324&apikey=mnWSViQlToQzLVSUXFLo2U7AOKJ1L338")
-    .then((response) => {
-      const events = response.data._embedded.events;
-      const trimmedData = events.map((event) => {
-        console.log(event)
-        const image = event.images[3]
-        const shapedData = {
-          name: event.name,
-          image: image,
-      
-          url: events.url,
-          date: event.dates.start.localDate,
-          time: event.dates.start.localTime,
-          address: event._embedded.venues[0].address.line1,
-          venue_name: event._embedded.venues[0].name
-          // venue: event.venue.location... etc
-        }
-        return shapedData
+      .then((response) => {
+        const events = response.data._embedded.events;
+        const trimmedData = events.map((event) => {
+          console.log(event)
+          const image = event.images[3]
+          const shapedData = {
+            name: event.name,
+            image: image,
+
+            url: events.url,
+            date: event.dates.start.localDate,
+            time: event.dates.start.localTime,
+            address: event._embedded.venues[0].address.line1,
+            venue_name: event._embedded.venues[0].name
+            // venue: event.venue.location... etc
+          }
+          return shapedData
+        })
+        console.log(trimmedData)
+        return res.send(trimmedData)
       })
-      console.log(trimmedData)
-      return res.send(trimmedData)
-    })
-}
+  },
+  searchArtist: function (req, res) {
+    console.log('HERE')
+    const name = req.params.name
+    const url = `https://app.ticketmaster.com/discovery/v2/events.json?classificationName=music&keyword=${name}&apikey=RAcRAAAio2LeFih8v4pqWXlZo1CA4mVs`
+    axios.get(url)
+      .then((response) => {
+        const data = response.data._embedded.events
+        const events = data.slice(0,10)
+        const trimmedData = events.map((event) => {
+          const image = event.images[3]
+          const shapedData = {
+            name: event.name,
+            image: image,
+
+            url: events.url,
+            date: event.dates.start.localDate,
+            time: event.dates.start.localTime,
+            address: event._embedded.venues[0].address.line1,
+            venue_name: event._embedded.venues[0].name
+            
+          }
+          return shapedData
+        })
+        res.send(trimmedData)
+      })
+  }
 
 };
