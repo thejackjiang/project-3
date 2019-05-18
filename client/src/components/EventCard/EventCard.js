@@ -33,7 +33,7 @@ export default function EventCard(props) {
                 </a>
             </Button>
 
-            <Button variant="primary">Save this Artist</Button>
+            <Button variant="primary" onClick={() => props.handleSave(props.event)}>Save this Event</Button>
           </div>
         </Card.Body>
       </Card>
