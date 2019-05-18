@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button'
 // import Col from 'react-bootstrap/Col'
 
 export default function EventCard(props) {
-    console.log(props)
+    // console.log(props)
     return (
         <Card style={{ width: '25rem' }}>
             <Card.Img variant="top mt-4" src={props.event.image.url} />
@@ -20,7 +20,7 @@ export default function EventCard(props) {
                     </Card.Text>
                 <Button variant="primary mr-2"><a href="{props.event.url}" target="_blank">Ticket Info</a></Button>
                 <Button variant="primary mr-2">Dates</Button>
-                <Button variant="primary">Save this Artist</Button>
+                <Button variant="primary" onClick={() => props.handleSave(props.event)}>Save this Artist</Button>
 
             </Card.Body>
         </Card>

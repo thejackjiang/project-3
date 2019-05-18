@@ -20,4 +20,8 @@ router
   .put(eventsController.update)
   .delete(eventsController.remove);
 
+router.route("/save").post((req, res)=>{
+  console.log(req.body)
+  res.send("successfully saved")
+})
 module.exports = router;
