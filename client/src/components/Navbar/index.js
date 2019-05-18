@@ -32,6 +32,10 @@ class Navbar extends Component {
         } else {
             return (
                 <ul className="navbar-nav">
+                    {/* necessary. */}
+                       <li className="nav-item">
+                        <Link className="nav-link" to="/Landing">Home</Link>
+                    </li>
                     <li className="nav-item">
                         <Link className="nav-link" to="/signup">Signup</Link>
                     </li>
