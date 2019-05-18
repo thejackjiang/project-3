@@ -1,8 +1,11 @@
+
 import React from "react";
 import API from '../utils/API'
 import EventCard from '../components/EventCard/EventCard';
 import Wrapper from "../components/Wrapper";
 import axios from "axios";
+import List from "../components/List";
+import { Col, Row, Container } from "../components/Grid";
 export default class Search extends React.Component {
     constructor(props) {
         super(props)
@@ -28,16 +31,38 @@ export default class Search extends React.Component {
     render() {
         console.log(this.state)
         return (
-            <Wrapper>
-            <div>
+         
                
                 <h1>IndieEvents</h1>
                 {this.state.artists.data && this.state.artists.data.map((event, i) => {
                     return <EventCard key={i} event={event} handleSave={this.handleSave}/>
+         
+                <Wrapper>
+                     
+              <Row>
+          <Col size="md-12">
+           
+              <h1 className="text-center">
+                <strong>Explore IndieEvents</strong>
+              </h1>
+              <h2 className="text-center">Search and save upcoming indie events</h2>
+     </Col>
+              </Row>
+              <Container>
+              <Row>
+           
+              <Col size="md-6">
+                {this.state.artists.data && this.state.artists.data.map(event => {
+                    return <EventCard event={event}/>
                 })}
-
-            </div>
+ 
+       
+   </Col>
+   </Row>
+ 
+   </Container>          
             </Wrapper>
+  
         )
     }
 }

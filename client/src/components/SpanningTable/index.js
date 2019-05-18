@@ -9,7 +9,7 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 
-const EventTable = 0.07;
+
 
 const styles = theme => ({
   root: {
@@ -27,9 +27,6 @@ const styles = theme => ({
 
 
 
-function Event () {
-  return 
-}
 
 function createRow(id, Artist, Date, Location, Time, Ticket) {
  
@@ -59,6 +56,7 @@ function SpanningTable(props) {
             <TableCell>Artist</TableCell>
             <TableCell align="right">Date</TableCell>
             <TableCell align="right">Location</TableCell>
+            <TableCell align="right">Venue</TableCell>
             <TableCell align="right">Time</TableCell>
             <TableCell align="right">Ticket</TableCell>
           </TableRow>

@@ -1,7 +1,8 @@
-import React from "../../../node_modules/react";
+import React from "react";
+import "./style.css";
 
 function Container(props) {
-  return <div className={`container${props.fluid ? "-fluid" : ""}`} {...props} />;
+  return <main className="container">{props.children}</main>;
 }
 
 export default Container;
