@@ -5,12 +5,18 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 0px;
-  display: inline-block;
+  display: inline-flex;
   width: fit-content;
   overflow: auto;
   margin-right: auto; 
   margin-left: auto; 
   max-width: auto; 
   width: 100%; 
+
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  overflow: auto;
 }
 
