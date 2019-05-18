@@ -5,5 +5,6 @@ export default function SingleEvent(props) {
     return (
         <h1>{artist.name} </h1>
         
+        
     )
 }

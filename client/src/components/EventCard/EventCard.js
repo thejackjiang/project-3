@@ -1,7 +1,7 @@
 import React from "react"
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
-import Container from 'react-bootstrap/Button'
+
 
 // import Container from 'react-bootstrap/Container'
 // import Row from 'react-bootstrap/Row'
@@ -11,7 +11,7 @@ export default function EventCard(props) {
     console.log(props)
     return (
         <Card style={{ width: '35rem' }}>
-            <Card.Img variant="top mt-4" src={props.event.image.url} />
+            <Card.Img variant="top mt-3" src={props.event.image.url} />
             <Card.Body>
                 <Card.Title style={{ width: '18rem' }}>{props.event.name}</Card.Title>
                 <Card.Subtitle>{props.event.venue}</Card.Subtitle>

@@ -1,12 +1,3 @@
-// import React, { Component } from "react";
-
-// export default function Search(props) {
-//   const artist = props.location.state.artist
-//     return (
-//         <h1>{artist.name} </h1>
-        
-//     )
-// }
 
 import React from "react";
 import API from '../utils/API'

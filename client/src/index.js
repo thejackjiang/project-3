@@ -11,7 +11,6 @@ import EventList from "./pages/EventList";
 import Favorites from "./pages/Favorites";
 import SingleEvent from "./pages/SingleEvent";
 import Landing from "./pages/Landing";
-// import Explore from "./pages/Explore";
 import Search from "./pages/Search";
 import Navbar from './components/Navbar';
 
