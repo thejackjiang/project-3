@@ -24,6 +24,10 @@ export default class Search extends React.Component {
   }
   handleSave(event) {
       console.log(event)
+      //add to the event object a key called user
+      //get the current user (maybe use their token)
+      // You need to find the user_id which matches the user in mongo
+      // Then add the user_id to to the new user key we made in the event object
    axios.post("/api/events/save", event).then(results=>{console.log(results)
    })   
   }

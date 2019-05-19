@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const eventsController = require("../../controllers/eventsController");
+const db = require('../../models');
 
 // Matches with "/api/events"
 router.route("/")
@@ -23,6 +24,8 @@ router
 
 router.route("/save").post((req, res)=>{
   console.log(req.body)
-  res.send("successfully saved")
+  db.Event.create(req.body)
+    .then(data => res.json(data))
+    .catch(err => res.status(400).json(err));
 })
 module.exports = router;

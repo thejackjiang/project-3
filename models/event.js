@@ -6,7 +6,8 @@ const eventSchema = new Schema({
   artist: { type: String, required: true },
   location: { type: String, required: true },
   description: String,
-  date: { type: Date, default: Date.now }
+  date: { type: Date, default: Date.now },
+  //user: {}
 });
 
 const Event = mongoose.model("Event", eventSchema);
