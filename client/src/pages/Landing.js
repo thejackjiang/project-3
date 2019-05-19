@@ -1,11 +1,13 @@
 import React from "react";
 import Carousel from 'react-bootstrap/Carousel'
 import Portraits from '../components/Portraits'
+import Wrapper from '../components/Wrapper'
 
 function Landing() {
 
   return (
     <div>
+     
       <Carousel>
         <Carousel.Item>
           <img
@@ -65,7 +67,9 @@ function Landing() {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
+      <Wrapper>
       <Portraits />
+      </Wrapper>
     </div>
   );
 }
