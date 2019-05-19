@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 import AuthService from '../AuthService';
+import "./style.css";
 
 class Navbar extends Component {
     constructor() {
@@ -11,6 +12,7 @@ class Navbar extends Component {
     showNavigation = () => {
         if (this.Auth.loggedIn()) {
             return (
+                
                 <ul className="navbar-nav">
                     <li className="nav-item">
                         <Link className="nav-link" to="/profile">Profile</Link>
@@ -56,7 +58,8 @@ class Navbar extends Component {
 
     render() {
         return (
-            <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+            <nav className="navbar navbar navbar-expand-lg">
+                  
                 <div className="container">
                     <Link className="navbar-brand" to="/">IndiePlay</Link>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,6 +71,7 @@ class Navbar extends Component {
                         {this.showNavigation()}
                     </div>
                 </div>
+               
             </nav>
         )
     }
