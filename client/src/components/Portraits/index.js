@@ -47,7 +47,7 @@ export default class Portraits extends Component {
 
   render() {
     return (
-      <div>
+      <div className="container">
            <Col sm="12">
 
          

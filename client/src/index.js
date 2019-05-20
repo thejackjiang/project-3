@@ -34,8 +34,9 @@ ReactDOM.render(
               <Route exact path="/Favorites" component={Favorites} />
               <Route exact path="/SingleEvent" component={SingleEvent} />
               <Route exact path="/Profile" component={Profile} />
+              <Footer /> 
         </div>
-        <Footer />
+ 
     </Router>
 
     , document.getElementById('root')
