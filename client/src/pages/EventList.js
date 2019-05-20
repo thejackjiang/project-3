@@ -53,8 +53,7 @@ class EventList extends Component {
  <Modal />
 </Grid>
  </Grid>
-<EventCard>
-  </EventCard>
+
   
       </div>
       </Wrapper>
