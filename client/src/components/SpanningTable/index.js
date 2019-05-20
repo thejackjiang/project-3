@@ -8,7 +8,7 @@ import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
-
+import "./style.css";
 
 
 const styles = theme => ({
@@ -16,12 +16,12 @@ const styles = theme => ({
     width: '100%',
     marginTop: theme.spacing.unit * 7,
     overflowX: 'auto',
-    height: '100%',
-    padding:30
+    height: '70%',
+    padding:10
   },
   table: {
     minWidth: '100%',
-    padding:50
+    padding:10
   },
 });
 

@@ -48,11 +48,8 @@ class EventList extends Component {
         
 
 <SpanningTable artists={this.state.indieArtists}/>
-<Grid container wrap="wrap" spacing={12}>
-<Grid item>
- <Modal />
-</Grid>
- </Grid>
+
+
 
   
       </div>

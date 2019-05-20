@@ -13,6 +13,7 @@ import SingleEvent from "./pages/SingleEvent";
 import Landing from "./pages/Landing";
 import Search from "./pages/Search";
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 // Here is if we have an id_token in localStorage
 if(localStorage.getItem("id_token")) {
@@ -34,7 +35,9 @@ ReactDOM.render(
               <Route exact path="/SingleEvent" component={SingleEvent} />
               <Route exact path="/Profile" component={Profile} />
         </div>
+        <Footer />
     </Router>
+
     , document.getElementById('root')
 );
 registerServiceWorker();
