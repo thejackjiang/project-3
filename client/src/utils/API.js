@@ -22,5 +22,8 @@ export default {
   },
   searchArtist: (name) => {
     return axios.get(`http://localhost:3001/api/events/artist/${name}`);
+  },
+  addFavorite: (event, id) => {
+    return axios.post(`http://localhost:3001/api/users/favorites/${id}`, event)
   }
 };
