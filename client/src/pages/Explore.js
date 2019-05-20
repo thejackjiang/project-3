@@ -24,8 +24,8 @@ export default class Explore extends React.Component {
         return (
             <Wrapper>
             <div>
-               
-                <h1>Explore IndieEvents</h1>
+               <p>
+                <h1>Explore IndieEvents</h1></p>
                 {this.state.artists.data && this.state.artists.data.map(event => {
                     return <EventCard event={event}/>
                 })}

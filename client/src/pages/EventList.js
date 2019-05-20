@@ -35,9 +35,10 @@ class EventList extends Component {
   render() {
     // console.log(this.state)
     return (
+
+      <Wrapper>
       <div>
      
-          <Wrapper>
             <p>
         <h1>Events Happening in LA</h1>
         <p> Below you will find a list of upcoming events in LA </p>
@@ -54,8 +55,9 @@ class EventList extends Component {
  </Grid>
 <EventCard>
   </EventCard>
-      </Wrapper>
+  
       </div>
+      </Wrapper>
     )
   }
 }
